@@ -17,7 +17,7 @@
             </h3>
             <carousel
                 :items-to-show="1"
-                :autoplay="3000"
+                :autoplay="2000"
                 :wrap-around="true"
                 class="w-full md:w-11/12 mx-auto pb-5"
             >

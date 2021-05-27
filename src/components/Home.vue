@@ -111,6 +111,7 @@
     <Team></Team>
     <Tech></Tech>
     <SliderClients></SliderClients>
+    <Testimonials></Testimonials>
     <Footer></Footer>
 </template>
 <script>
@@ -121,6 +122,7 @@ import SliderClients from './layouts/home/SliderClients.vue'
 import Team from './layouts/home/Team.vue'
 import Services from './layouts/home/Services.vue'
 import Tech from './layouts/home/Tech.vue'
+import Testimonials from './miscellaneous/Testimonials.vue'
 export default {
     components: {
         Menu,
@@ -129,7 +131,8 @@ export default {
         SliderClients,
         Team, 
         Services,
-        Tech
+        Tech,
+        Testimonials
     },
 }
 </script>

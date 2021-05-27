@@ -8,5 +8,14 @@
 
 
 .bg-header-home{
-    background-image: url('/img/fondo-formas.jpg');
+    background-image: url('/img/fondo-3.jpg');
+    background-attachment: fixed;
+    background-position: left top;
+    background-size:cover;
+}
+.bg-web{
+    background-image: url('/img/fondo-2.jpg');
+    background-attachment: fixed;
+    background-position: left top;
+    background-size:cover;
 }

@@ -19,11 +19,11 @@ import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 const slider = [
     {
-        src: '/img/wm-05.png',
+        src: '/img/slider-1.png',
         alt: 'Slider 1',
     },
     {
-        src: '/img/wm-08.png',
+        src: '/img/slider-2.png',
         alt: 'Slider 2',
     },
     {
