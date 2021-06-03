@@ -224,7 +224,7 @@
                     >
                         Nosotros
                     </router-link>
-                    <router-link
+                    <!-- <router-link
                         :to="'/recursos'"
                         class="
                             text-base
@@ -234,7 +234,7 @@
                         "
                     >
                         Recursos
-                    </router-link>
+                    </router-link> -->
 
                     <Popover class="relative" v-slot="{ open }">
                         <PopoverButton
@@ -562,7 +562,7 @@
                             >
                                 Nosotros
                             </router-link>
-
+<!-- 
                             <a
                                 href="#"
                                 class="
@@ -573,7 +573,7 @@
                                 "
                             >
                                 Recursos
-                            </a>
+                            </a> -->
                             <a
                                 v-for="item in resources"
                                 :key="item.name"

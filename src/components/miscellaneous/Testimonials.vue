@@ -1,7 +1,7 @@
 <template>
     <div class="container mx-auto pt-16">
         <div class="pb-12">
-            <h2 class="text-3xl xl:text-5xl font-extrabold text-gray-800 mx-auto text-center pb-4">Lo que nuestros clientes dicen de Evol</h2>
+            <h2 class="text-3xl xl:text-5xl font-extrabold text-blue-800 mx-auto text-center pb-4">Lo que nuestros clientes dicen de Nosotros</h2>
             <p class="text-xl text-gray-600 xl:w-3/4 w-11/12 mx-auto text-center">Queremos compartir contigo los comentarios recibidos por algunos de nuestros clientes, quienes han recibido apoyo constante y nos han generado los retos que cada día enfrentamos con calidad y buen servicio</p>
         </div>
         <section id="carousel">

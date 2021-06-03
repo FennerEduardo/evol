@@ -27,8 +27,12 @@ const slider = [
         alt: 'Slider 2',
     },
     {
-        src: '/img/wm-09.png',
+        src: '/img/slider-3.png',
         alt: 'Slider 3',
+    },
+    {
+        src: '/img/slider-4.png',
+        alt: 'Slider 4',
     }
 ]
 
