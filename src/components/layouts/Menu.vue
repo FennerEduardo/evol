@@ -1,7 +1,7 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
     <Popover open="true" class="relative bg-transparent">
-        <div class="max-w-7xl md:max-w-full mx-auto  sm:px-6 md:px-20">
+        <div class="max-w-7xl md:max-w-full mx-auto sm:px-6 md:px-20">
             <div
                 class="
                     flex
@@ -41,18 +41,13 @@
                         "
                     >
                         <span class="sr-only">Abrir menú</span>
-                       
+
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
                             height="16"
                             fill="currentColor"
-                            class="
-                                bi bi-list
-                                h-12
-                                w-12
-                                text-blue-700                                
-                            "
+                            class="bi bi-list h-12 w-12 text-blue-700"
                             viewBox="0 0 16 16"
                         >
                             <path
@@ -62,7 +57,10 @@
                         </svg>
                     </PopoverButton>
                 </div>
-                <PopoverGroup as="nav" class="hidden md:flex space-x-10 justify-end">
+                <PopoverGroup
+                    as="nav"
+                    class="hidden md:flex space-x-10 justify-end"
+                >
                     <Popover class="relative" v-slot="{ open }">
                         <PopoverButton
                             :class="[
@@ -500,7 +498,7 @@
                                         focus:ring-blue-500
                                     "
                                 >
-                                    <span class="sr-only">Cerrar Menú</span>                                   
+                                    <span class="sr-only">Cerrar Menú</span>
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
@@ -534,7 +532,16 @@
                                         hover:bg-gray-50
                                     "
                                 >
-                                    <component :is="item.icon" class="flex-shrink-0 h-6 w-6 text-blue-600" aria-hidden="true" />
+                                    <component
+                                        :is="item.icon"
+                                        class="
+                                            flex-shrink-0
+                                            h-6
+                                            w-6
+                                            text-blue-600
+                                        "
+                                        aria-hidden="true"
+                                    />
                                     <span
                                         class="
                                             ml-3
@@ -562,7 +569,7 @@
                             >
                                 Nosotros
                             </router-link>
-<!-- 
+                            <!-- 
                             <a
                                 href="#"
                                 class="
@@ -759,6 +766,6 @@ export default {
             resources,
             // recentPosts,
         }
-    },
+    }
 }
 </script>

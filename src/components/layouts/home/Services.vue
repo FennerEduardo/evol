@@ -45,18 +45,17 @@
                 class="md:flex items-center -mx-10 my-3"
                 v-for="(service, index) in services"
                 :key="index"
-                :class=" {'bg-gray-100' : service.position} "
+                :class="{ 'bg-gray-100': service.position }"
             >
                 <div
                     class="w-full md:w-1/3 px-10 mb-10 md:mb-0"
                     v-if="service.position"
-                    
                 >
                     <div
                         class="relative"
                         v-if="visible"
                         :class="{
-                            'animate__animated animate__fadeInDown animate__delay-2s':
+                            'animate__animated animate__fadeInDown animate__faster':
                                 visible,
                         }"
                     >
@@ -83,7 +82,7 @@
                         class="mb-10"
                         v-if="visible"
                         :class="{
-                            'animate__animated animate__fadeInUp animate__delay-2s':
+                            'animate__animated animate__fadeInUp animate__faster':
                                 visible,
                         }"
                     >
@@ -110,7 +109,7 @@
                     </div>
                     <div>
                         <div class="inline-block align-bottom">
-                            <button
+                            <router-link
                                 class="
                                     bg-blue-700
                                     opacity-75
@@ -122,10 +121,11 @@
                                     py-2
                                     font-semibold
                                 "
+                                 :to="service.cta.five"
                             >
                                 <i class="mdi mdi-cart -ml-2 mr-2"></i>
                                 {{ service.cta.four }}
-                            </button>
+                            </router-link>
                         </div>
                         <div class="inline-block align-bottom ml-5">
                             <span
@@ -153,7 +153,7 @@
                         class="mb-10"
                         v-if="visible"
                         :class="{
-                            'animate__animated animate__fadeInUp animate__delay-2s':
+                            'animate__animated animate__fadeInUp animate__faster':
                                 visible,
                         }"
                     >
@@ -199,7 +199,7 @@
                             >
                         </div>
                         <div class="inline-block align-bottom">
-                            <button
+                            <router-link
                                 class="
                                     bg-blue-700
                                     opacity-75
@@ -211,10 +211,11 @@
                                     py-2
                                     font-semibold
                                 "
+                                :to="service.cta.five"
                             >
                                 <i class="mdi mdi-cart -ml-2 mr-2"></i>
                                 {{ service.cta.four }}
-                            </button>
+                            </router-link>
                         </div>
                     </div>
                 </div>
@@ -223,7 +224,7 @@
                         class="relative"
                         v-if="visible"
                         :class="{
-                            'animate__animated animate__fadeInDown animate__delay-2s':
+                            'animate__animated animate__fadeInDown animate__faster':
                                 visible,
                         }"
                     >

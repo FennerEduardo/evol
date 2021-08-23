@@ -811,7 +811,10 @@ export default {
         }
     },
     mounted() {
-        window.addEventListener('scroll', this.mostrarParrafos)
+        setTimeout(() => {
+            this.mostrarParrafos()
+        }, 1000);
+    
     },
     methods: {
         mostrarParrafos() {

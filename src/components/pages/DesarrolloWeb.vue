@@ -4,6 +4,13 @@
         <div class="min-h-screen flex justify-center items-center">
             <div class="">
                 <div class="text-center font-semibold">
+                    <div class="w-1/4 md:w-1/3 mx-auto">
+                        <img
+                            class="w-full"
+                            src="/img/slider-3.png"
+                            alt="Redes sociales"
+                        />
+                    </div>
                     <h1 class="text-5xl mt-8" id="tituloDesarrolloWeb">
                         <span class="text-blue-700 tracking-wide"
                             >Planes Web
@@ -156,11 +163,14 @@
                         </p>
                     </div>
                 </div>
-                <div class="p-4 md:pt-24 flex flex-col md:flex-row mt-4"  v-if="parrafoVisible"
-                        :class="{
-                            'animate__animated animate__fadeInUp animate__delay-2s':
-                                visible,
-                        }">
+                <div
+                    class="p-4 md:pt-24 flex flex-col md:flex-row mt-4"
+                    v-if="parrafoVisible"
+                    :class="{
+                        'animate__animated animate__fadeInUp animate__delay-2s':
+                            visible,
+                    }"
+                >
                     <!-- Basic Card -->
                     <div
                         class="
@@ -816,11 +826,14 @@ export default {
         return {
             pilares,
             visible: false,
-            parrafoVisible: false
+            parrafoVisible: false,
         }
     },
     mounted() {
-        window.addEventListener('scroll', this.mostrarParrafos)
+        setTimeout(() => {
+            this.mostrarParrafos()
+        }, 1000)
+        // window.addEventListener('scroll', this.mostrarParrafos)
     },
     methods: {
         mostrarParrafos() {
@@ -829,7 +842,7 @@ export default {
             const observer = new IntersectionObserver((entries) => {
                 if (entries[0].isIntersecting) {
                     this.visible = true
-                    if(this.visible){
+                    if (this.visible) {
                         this.parrafoVisible = true
                     }
                 }

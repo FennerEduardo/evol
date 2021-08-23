@@ -16,7 +16,7 @@
                     <div
                         class="
                             h-1/2
-                            md:min-h-full                            
+                            md:min-h-full
                             flex
                             items-center
                             justify-center
@@ -58,36 +58,37 @@
                                         p-2
                                         my-5
                                         mx-2
-                                        bg-indigo-700
-                                        hover:bg-indigo-800
+                                        bg-blue-700
+                                        hover:bg-blue-800
                                         font-bold
                                         text-white
                                         rounded
                                         border-2 border-transparent
-                                        hover:border-indigo-800
+                                        hover:border-blue-800
                                         shadow-md
                                         transition
                                         duration-500
                                         md:text-xl
                                     "
+                                    @click="doScrollTo"
                                 >
                                     ¡Iniciemos!
                                 </button>
-                                <a href="#about"
-                                    ><button
+                                <router-link :to="{ name: 'Nosotros' }">
+                                    <button
                                         class="
                                             p-2
                                             my-5
                                             mx-2
                                             bg-transparent
                                             border-2
-                                            bg-indigo-200 bg-opacity-75
+                                            bg-blue-200 bg-opacity-75
                                             hover:bg-opacity-100
-                                            border-indigo-700
+                                            border-blue-700
                                             rounded
-                                            hover:border-indigo-800
+                                            hover:border-blue-800
                                             font-bold
-                                            text-indigo-800
+                                            text-blue-800
                                             shadow-md
                                             transition
                                             duration-500
@@ -95,8 +96,8 @@
                                         "
                                     >
                                         Quiero Conocerlos Mejor
-                                    </button></a
-                                >
+                                    </button>
+                                </router-link>
                             </div>
                         </div>
                     </div>
@@ -129,10 +130,22 @@ export default {
         Footer,
         Carousel,
         SliderClients,
-        Team, 
+        Team,
         Services,
         Tech,
-        Testimonials
+        Testimonials,
+    },
+    methods: {
+        doScrollTo() {
+            const subtituloServices =
+                document.querySelector('#subtituloServices')          
+            setTimeout(() => {
+                window.scrollTo(
+                    0,
+                    subtituloServices.getBoundingClientRect().top
+                )
+            }, 800)           
+        },
     },
 }
 </script>

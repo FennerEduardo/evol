@@ -49,39 +49,30 @@
                             class="w-40"
                         />
                     </div>
-                    <a
+                     <router-link
+                        :to="{ name: 'Nosotros' }"
                         class="
-                            hidden
-                            md:block
+                            tmd:block
                             cursor-pointer
                             text-blue-50
                             hover:text-white
                             uppercase
                         "
-                        >Nosotros</a
                     >
-                    <a
+                        Nosotros
+                    </router-link>                    
+                     <a
+                        href="/#subtituloServices"
                         class="
-                            hidden
-                            md:block
+                            tmd:block
                             cursor-pointer
                             text-blue-50
                             hover:text-white
                             uppercase
                         "
-                        >Servicios</a
                     >
-                    <a
-                        class="
-                            hidden
-                            md:block
-                            cursor-pointer
-                            text-blue-50
-                            hover:text-white
-                            uppercase
-                        "
-                        >Recursos</a
-                    >
+                        Servicios
+                    </a>  
                     <a
                         class="
                             hidden
