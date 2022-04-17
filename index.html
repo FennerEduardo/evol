@@ -1,13 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Evol</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<html lang="es">
+
+<head>
+  <!-- enlace analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GH3VBYRMRE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-GH3VBYRMRE');
+  </script>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EVOL- Diseño de marca y Desarrollo web</title>
+  <meta name="description"
+    content="Diseño de logos, desarrollo de páginas y sitios web, imagen corporativa, creación de contenido para redes sociales, tienda online, aplicaciones web. Somos un estudio multidisciplinario de desarrollo y diseño, enfocado en brindar soluciones integrales para que las empresas implementen y mejoren su presencia digital.">
+  <!-- Facebook Open Graph -->
+  <meta property="og:title" content="EVOL- Diseño de marca y Desarrollo web" />
+  <meta property="og:description"
+    content="Diseño de logos, desarrollo de páginas y sitios web, imagen corporativa, creación de contenido para redes sociales, tienda online, aplicaciones web. Somos un estudio multidisciplinario de desarrollo y diseño, enfocado en brindar soluciones integrales para que las empresas implementen y mejoren su presencia digital." />
+  <meta property="og:image" content="https://evol.com.co/imag/evol.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://evol.com.co" />
+  <meta property="og:site_name" content="EVOL- Diseño de marca y Desarrollo web" />
+  <!-- Facebook Open Graph end -->
+
+  <!-- Inicio meta RRSSS -index -->
+  <meta name="DC.title" content="Evol Bogota, evol" />
+  <meta name="geo.region" content="CO-DC" />
+  <meta name="geo.placename" content="Bogota" />
+  <meta name="geo.position" content="4.511127,-74.1118227" />
+  <meta name="ICBM" content="4.511127,-74.1118227" />
+  <meta property="fb:admins" content="113413730542715" />
+  <meta name="author" content="Evol, Fenner González, Leonardo Hernández">
+  <link rel="canonical" href="https://evol.com.co" />
+</head>
+
+<body>
+  <!-- botón Facebook -->
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v9.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat" attribution=setup_tool page_id="113413730542715" theme_color="#242946"
+    logged_in_greeting="Hola, gracias por estar aquí, ¿en qué podemos ayudarte?"
+    logged_out_greeting="Hola, gracias por estar aquí, ¿en qué podemos ayudarte?">
+  </div> <!-- botón WhatsApp -->
+  <div class="btn-whatsapp">
+    <a href="https://api.whatsapp.com/send?phone=5730070409955&text=Hola,%20Me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20de%20Evol%20y%20sus%20servicios%20para%20mi%20empresa"
+      target="_blank">
+      <i class='fab fa-whatsapp'></i>
+    </a>
+  </div>
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>

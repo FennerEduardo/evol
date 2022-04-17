@@ -7,7 +7,7 @@
                     id="up"
                     class="
                         md:py-40
-                        bg-center bg-fixed bg-no-repeat bg-center bg-cover
+                         bg-fixed bg-no-repeat bg-center bg-cover
                         my-16
                         relative
                     "
